@@ -14,15 +14,15 @@
         </div>
         <div class="col-6 h-75 justify-content-center align-items-center d-flex">
             <div class="justify-content-center w-50 h-75 box d-flex align-items-center">
-                <form action="#" method="post" class="flex-column d-flex">
+                <form action="/Registro" method="post" class="flex-column d-flex">
+                    @csrf
                     <label for="email" class="form-label">Email</label>
                     <input type="text" class=" mb-2">
                     <label for="senha">Senha</label>
                     <input type="password" class=" mb-4" >
                     <div class="justify-content-end d-flex">
-                        <button class = "btn btn-outline-warning mb-4" type="submit">Login</button>
-                    </div>
-                    <p>Ainda não registrado?<a href="http://"> Registrar-se</a></p>
+                        <button class = "btn btn-outline-warning" type="submit" href="/Registro">Login</button>
+                    </div>g
                 </form>
             </div>
         </div>

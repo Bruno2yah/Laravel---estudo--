@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('Ordem');
+});
+
+Route::post('/Registro', function () {
     return view('Registro');
 });
 
