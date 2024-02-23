@@ -1,0 +1,32 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.box{
+    border: 2px solid gold;
+    border-radius: 12px;
+    
+}
+
+input{
+    border: 0;
+    border-bottom: 2px solid gold;
+    padding: 1%;
+    outline: 0;
+}
+
+label{
+    font-size: 15pt;
+    color: gold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+
+a:hover{
+    color: gold;
+}
