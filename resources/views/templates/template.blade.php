@@ -14,7 +14,7 @@
         <nav class="nav row w-100 d-flex justify-content-center align-items-center">
             <div class="col-4 d-flex justify-content-center align-items-center gap-5">
                 <a href="/"> Home </a>
-                <a href="/galeria"> Galeria </a>        
+                <a href="#"> Registro </a>        
             </div>    
         </nav> 
 

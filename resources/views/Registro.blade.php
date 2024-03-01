@@ -11,12 +11,13 @@
 @extends ("templates.template")
 @section('contente')
     <main class="d-flex w-100 h-100 justify-content-center align-items-center ">
-    <div class="col-4 h-75 justify-content-center align-items-center d-flex ">
-            <img src="{{url('assets/img/img1.png')}}" class = "img-fluid h-75 w-75"alt="" srcset="">
+    <div class="col-4 h-75 justify-content-center align-items-center d-flex img-col" id = "img-col">
+            <img src="{{url('assets/img/img1.png')}}" class = "img-fluid h-75 w-75 img-col"alt="" srcset="" id = "img-col">
         </div>
-        <div class="col-4 h-75 justify-content-center align-items-center d-flex">
+        <div class="col-4 h-75 justify-content-center align-items-center d-flex" id="img">
             <div class="justify-content-center w-100 h-100 box d-flex align-items-center p-2">
                 <form action="#" method="post" class="flex-column d-flex justify-content-center align-items-center">
+                @csrf
                      <div class="row d-flex justify-content-center align-items-center mb-2">
                         <div class="col-6 d-flex justify-content-center flex-column">
                             <label for="nome" class="form-label">Nome</label>
@@ -59,10 +60,11 @@
                 </form>
             </div>
         </div>
-        <div class="col-4 h-75 justify-content-center align-items-center d-flex ">
-            <img src="{{url('assets/img/img2.png')}}" class = "img-fluid h-75 w-75"alt="" srcset="">
+        <div class="col-4 h-75 justify-content-center align-items-center d-flex img-col" id = "img-coll">
+            <img src="{{url('assets/img/img2.png')}}" class = "img-fluid h-75 w-75 img-col"alt="" srcset="" id = "img-coll">
         </div>
     </main>
     @endsection
+    <script src="{{url('assets/js/script.js') }}"></script>
 </body>
 </html>

@@ -9,10 +9,10 @@
 </head>
 <body class = "d-flex justify-content-center align-items-center">
     <main class="d-flex w-100 h-100 justify-content-center align-items-center ">
-        <div class="col-6 h-75 justify-content-center align-items-center d-flex ">
+        <div class="col-6 h-75 justify-content-center align-items-center d-flex " id = "img-col">
             <img src="{{url('assets/img/Fukurokumaru.PNG.png')}}" class = "img-fluid h-75 w-75"alt="" srcset="">
         </div>
-        <div class="col-6 h-75 justify-content-center align-items-center d-flex">
+        <div class="col-6 h-75 justify-content-center align-items-center d-flex" id = "img">
             <div class="justify-content-center w-50 h-75 box d-flex align-items-center">
                 <form action="/Registro" method="post" class="flex-column d-flex">
                     @csrf
@@ -27,5 +27,7 @@
             </div>
         </div>
     </main>
+    <script src="{{url('assets/js/scriptLogin.js') }}"></script>
 </body>
+
 </html>

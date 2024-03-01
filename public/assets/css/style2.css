@@ -31,3 +31,9 @@ a{
 a:hover{
     color: #0d6efd;
 }
+
+@media screen and (max-width: 800px) {
+    .img-col{
+        display: none;
+    }
+}
