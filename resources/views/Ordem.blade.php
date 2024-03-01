@@ -22,7 +22,7 @@
                     <input type="password" class=" mb-4" >
                     <div class="justify-content-end d-flex">
                         <button class = "btn btn-outline-warning" type="submit" href="/Registro">Login</button>
-                    </div>g
+                    </div>
                 </form>
             </div>
         </div>

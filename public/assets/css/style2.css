@@ -1,12 +1,13 @@
 body{
     width: 100vw;
     height: 100vh;
+    background-color:  white;
 }
 
 .box{
     border: 2px solid #0d6efd;
     border-radius: 12px;
-    
+    background-color: #fff;
 }
 
 input{

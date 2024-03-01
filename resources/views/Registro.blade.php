@@ -7,7 +7,9 @@
     <link href="{{url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css')}}" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="{{url('assets/css/style2.css')}}">
 </head>
-<body class = "d-flex justify-content-center align-items-center">
+<body class = "d-flex justify-content-center align-items-center flex-column">
+@extends ("templates.template")
+@section('contente')
     <main class="d-flex w-100 h-100 justify-content-center align-items-center ">
     <div class="col-4 h-75 justify-content-center align-items-center d-flex ">
             <img src="{{url('assets/img/img1.png')}}" class = "img-fluid h-75 w-75"alt="" srcset="">
@@ -61,5 +63,6 @@
             <img src="{{url('assets/img/img2.png')}}" class = "img-fluid h-75 w-75"alt="" srcset="">
         </div>
     </main>
+    @endsection
 </body>
 </html>

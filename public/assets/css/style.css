@@ -6,7 +6,7 @@ body{
 .box{
     border: 2px solid gold;
     border-radius: 12px;
-    
+    box-shadow: -15px 22px 15px 15px rgb(248, 240, 197);
 }
 
 input{
