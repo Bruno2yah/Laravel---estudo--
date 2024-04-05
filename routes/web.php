@@ -1,7 +1,8 @@
 <?php
 
+use App\Models\Manutencao;
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,3 +22,25 @@ Route::post('/Registro', function () {
     return view('Registro');
 });
 
+Route::post('/cadastrar',function(Request $request){
+
+        //criar informações vinculada ao Model para o banco de dados/
+        Manutencao::create([
+          'nome'=> $request -> nome,
+    
+          'cpf' =>$request -> cpf,
+    
+          'telefone'=> $request -> telefone,
+
+          'modelo'=> $request -> modelo,
+
+          'marca'=> $request -> marca,
+
+          'defeito'=> $request -> defeito,
+
+          'data'=> $request -> data
+        ]);
+    
+
+        echo " Cadastrado com sucessso";
+    });
